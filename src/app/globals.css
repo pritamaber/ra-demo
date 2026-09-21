@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-wine: #5a0f2e;
+  --color-alta: #9b1b4b;
+  --color-gold: #c8962e;
+  --color-blush: #f4dde2;
+  --color-silk: #fcfaf8;
+  --color-ink: #2b1a21;
+  --font-heading: var(--font-marcellus), serif;
+  --font-sans: var(--font-jost), system-ui, sans-serif;
+  --font-bengali: var(--font-bengali), serif;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--color-silk); color: var(--color-ink); line-height: 1.6; }
+:focus-visible { outline: 2px solid var(--color-alta); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+@keyframes hero-rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+.hero-rise { animation: hero-rise 0.9s ease-out both; }
+.hero-rise-late { animation: hero-rise 0.9s 0.25s ease-out both; }
