@@ -22,7 +22,7 @@ export const bridal = {
   ],
 };
 
-export const showcase = { title: "Let Your Jewellery Speak", bn: "গয়না নিজেই কথা বলে", codes: ["RA-N01", "RA-E01", "RA-B01", "RA-E02"] };
+export const showcase = { title: "Let Your Jewellery Speak", bn: "গয়না নিজেই কথা বলে" };
 
 export const everyday = {
   title: "Light Jewellery for Every Day",

@@ -26,7 +26,7 @@ export default function Footer() {
           <h3 className={h}>Shop</h3>
           <ul className="text-sm">
             {categories.map((c) => (
-              <li key={c.slug}><Link className={link} href="/collections/necklaces">{c.name}</Link></li>
+              <li key={c.slug}><Link className={link} href={`/collections/${c.slug}`}>{c.name}</Link></li>
             ))}
           </ul>
         </div>

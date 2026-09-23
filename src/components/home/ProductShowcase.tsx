@@ -1,11 +1,13 @@
 import SectionTitle from "@/components/ui/SectionTitle";
 import ProductCard from "@/components/ui/ProductCard";
 import Button from "@/components/ui/Button";
-import { products } from "@/data/products";
+import { getProducts } from "@/data/products";
 import { showcase } from "@/data/home";
 
-export default function ProductShowcase() {
-  const items = showcase.codes.map((c) => products.find((p) => p.code === c)).filter((p): p is NonNullable<typeof p> => !!p);
+export default async function ProductShowcase() {
+  const products = await getProducts();
+  const items = products.slice(0, 4); // most recently added/updated in the admin catalogue
+
   return (
     <section className="bg-wine py-14 md:py-20">
       <SectionTitle title={showcase.title} bn={showcase.bn} tone="dark" />

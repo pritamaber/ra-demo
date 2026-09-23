@@ -10,7 +10,7 @@ export const site = {
   },
   phone: "+91 90385 13522",
   phoneHref: "tel:+919038513522",
-  whatsappNumber: "919038513522",
+  whatsappNumber: "916291616198",
   rating: { value: 4.2, count: 53 },
   serviceAreas: ["Rajarhat", "New Town", "Chinar Park", "Baguiati", "Salt Lake", "Kestopur"],
   // TODO(client): confirm full weekly schedule; only the 5 pm evening opening is confirmed
