@@ -20,6 +20,9 @@ export const site = {
   mapsUrl: "",
   tagline: "Right at the Rajarhat Chowmatha bus stand",
   agency: { name: "Reba Digital Solutions", url: "https://rebadigitalsolutions.com" },
+  // Staff-only link to the admin app (no login on that app — see its own README). Public on this site
+  // by request; move behind auth or drop from the footer before this is anything but a private demo.
+  adminUrl: "https://ra-demo-admin-production.up.railway.app/",
 } as const;
 
 export function whatsappLink(message: string) {

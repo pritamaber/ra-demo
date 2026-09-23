@@ -40,6 +40,8 @@ export default function Footer() {
       <div className="border-t border-gold/30 px-4 py-4 text-center text-xs text-blush">
         © {new Date().getFullYear()} {site.name} · Website by{" "}
         <a className="underline" href={site.agency.url} target="_blank" rel="noopener noreferrer">{site.agency.name}</a>
+        {" "}·{" "}
+        <a className="underline" href={site.adminUrl} target="_blank" rel="noopener noreferrer">Admin</a>
       </div>
     </footer>
   );
